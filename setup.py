@@ -50,7 +50,7 @@ setup(
     version=version,
     description="""Your project description goes here""",
     long_description=readme + '\n\n' + history,
-    author='Django Response Viewset Mixin',
+    author='FankHood Business Solutions SRL',
     author_email='info@frankhood.it',
     url='https://github.com/frankhood/django-response-mixin-view',
     packages=[

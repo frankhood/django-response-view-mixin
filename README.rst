@@ -1,5 +1,5 @@
 =============================
-Django-response-mixin-view
+Django-response-view-mixin
 =============================
 
 .. image:: https://badge.fury.io/py/django-response-mixin-view.svg
@@ -21,9 +21,9 @@ The full documentation is at https://django-response-mixin-view.readthedocs.io.
 Quickstart
 ----------
 
-Install Django-response-mixin-view::
+Install Django-response-view-mixin::
 
-    pip install django-response-mixin-view
+    pip install response-view-mixin
 
 Add it to your `INSTALLED_APPS`:
 
@@ -31,22 +31,13 @@ Add it to your `INSTALLED_APPS`:
 
     INSTALLED_APPS = (
         ...
-        'django_response_mixin_view.apps.DjangoResponseMixinViewConfig',
+        'response_view_mixin',
         ...
     )
 
 Add Django-response-mixin-view's URL patterns:
 
 .. code-block:: python
-
-    from django_response_mixin_view import urls as django_response_mixin_view_urls
-
-
-    urlpatterns = [
-        ...
-        url(r'^', include(django_response_mixin_view_urls)),
-        ...
-    ]
 
 Features
 --------

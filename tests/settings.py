@@ -30,9 +30,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'django_response_mixin_view',
+    'response_view_mixin',
 
-    # 'django_response_mixin_view.test_utils.test_app'
+    # 'response_view_mixin.test_utils.test_app'
 
     'tests.example',
     # if your app has other dependencies that need to be added to the site

@@ -3,4 +3,4 @@ from django.apps import AppConfig
 
 
 class DjangoResponseMixinViewConfig(AppConfig):
-    name = 'django_response_mixin_view'
+    name = 'response_view_mixin'

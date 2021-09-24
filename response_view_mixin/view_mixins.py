@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""  frankhood.fhcore.views.response_mixins.py
+"""  frankhood.fhcore.views.view_mixins.py
     @author: Frankhood Business Solutions
     @date : 20/set/2013
 """
@@ -25,7 +25,7 @@ __all__ = [
 
 logger = logging.getLogger(__name__)
 
-from django_response_mixin_view.utils import image_serve
+from response_view_mixin.utils import image_serve
 
 
 # ===============================================================================
@@ -121,14 +121,13 @@ class FileResponseServeMixin(object):
         response = serve(self.request,
                          path=self.get_file_path(**context),
                          document_root=self.get_file_docroot())
-
         try:
             response['Content-Disposition'] = ('attachment; filename="{0}"'
                                                '').format(response.get('Content-Disposition',
                                                                        os.path.split(self.get_file_path(**context))[
                                                                            -1]))
         except Exception:
-            logger.exception()
+            logger.exception("")
         return response
 
 

@@ -32,6 +32,5 @@ jobs:
     - name: Test with tox ${{ matrix.env.TOXENV }}
       env: ${{ matrix.env }}
       run: tox
-
-after_success:
-  - codecov -e TOX_ENV
+    - name: Upload coverage to Codecov
+    - uses: codecov/codecov-action@v2

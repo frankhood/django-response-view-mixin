@@ -163,7 +163,7 @@ class TestExampleFileViewMixin(TestCase):
 
         response = self.client.get('/tests/api/example-file-response/')
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response['Content-Disposition'], f'attachment; filename="git.jpg"')
+        self.assertEqual(response['Content-Disposition'], f'attachment; filename="inline; filename="git.jpg""')
         self.assertEqual(response['Content-Type'], 'image/jpeg')
 
     def test_get_file_docroot(self):

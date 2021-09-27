@@ -15,8 +15,8 @@ jobs:
       matrix:
         python-version: [3.6, 3.7, 3.8, 3.9]
         env:
-          - TOXENV: django-22
-          - TOXENV: django-32
+          - TOXENV: django22
+          - TOXENV: django32
 
     steps:
     - uses: actions/checkout@v2

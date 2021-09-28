@@ -5,6 +5,9 @@ Django-response-view-mixin
 .. image:: https://badge.fury.io/py/django-response-mixin-view.svg
     :target: https://badge.fury.io/py/django-response-mixin-view
 
+.. image:: https://github.com/frankhood/django-response-view-mixin/actions/workflows/testing.yml/badge.svg
+    :target: https://github.com/frankhood/django-response-view-mixin/actions/workflows/testing.yml
+
 .. image:: https://codecov.io/gh/frankhood/django-response-mixin-view/branch/master/graph/badge.svg
     :target: https://codecov.io/gh/frankhood/django-response-mixin-view
 

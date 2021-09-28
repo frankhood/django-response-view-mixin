@@ -5,18 +5,15 @@ Django-response-view-mixin
 .. image:: https://badge.fury.io/py/django-response-mixin-view.svg
     :target: https://badge.fury.io/py/django-response-mixin-view
 
-.. image:: https://travis-ci.org/yourname/django-response-mixin-view.svg?branch=master
-    :target: https://travis-ci.org/yourname/django-response-mixin-view
-
-.. image:: https://codecov.io/gh/yourname/django-response-mixin-view/branch/master/graph/badge.svg
-    :target: https://codecov.io/gh/yourname/django-response-mixin-view
+.. image:: https://codecov.io/gh/frankhood/django-response-mixin-view/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/frankhood/django-response-mixin-view
 
 Your project description goes here
 
 Documentation
 -------------
 
-The full documentation is at https://django-response-mixin-view.readthedocs.io.
+The full documentation is at https://django-response-view-mixin.readthedocs.io/.
 
 Quickstart
 ----------

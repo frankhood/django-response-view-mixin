@@ -38,7 +38,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Upload coverage to Codecov
-      - uses: codecov/codecov-action@v1
+        uses: codecov/codecov-action@v1
         with:
           flags: unittests
           name: ${{ matrix.python-version }}-${{ matrix.env.TOXENV }}
@@ -49,7 +49,7 @@ jobs:
     needs: [test]
     steps:
       - name: Trigger RTDs build
-      - uses: dfm/rtds-action@v1
+        uses: dfm/rtds-action@v1
         with:
           webhook_url: ${{ secrets.RTDS_WEBHOOK_URL }}
           webhook_token: ${{ secrets.RTDS_WEBHOOK_TOKEN }}

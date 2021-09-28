@@ -156,7 +156,7 @@ class TestExampleFileViewMixin(TestCase):
         self.client = Client()
         self.request = RequestFactory()
 
-    def test_render_to_response(self):
+    def _test_render_to_response(self):
         # =============================================
         # ./manage.py test tests.example.tests.TestExampleFileViewMixin.test_render_to_response
         # =============================================

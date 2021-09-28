@@ -2,7 +2,7 @@ name: Django Package CI
 
 on:
   push:
-    branches: [github-actions]
+    branches: [main]
   pull_request:
     branches: [ main ]
 

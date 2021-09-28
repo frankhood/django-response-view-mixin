@@ -32,27 +32,25 @@ jobs:
       env: ${{ matrix.env }}
       run: tox --py current
 
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v1
-      with:
-        flags: unittests
-        name: ${{ matrix.python-version }}-${{ matrix.env.TOXENV }}
-        token: ${{ secrets.GIT_ACTIONS }}
 
-#  upload-to-coverage:
-#    needs: [test]
-#    runs-on: ubuntu-latest
-#    steps:
-#      - name: Checkout
-#      - uses: actions/checkout@v2
+  upload-to-coverage:
+    needs: [test]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Upload coverage to Codecov
+      - uses: codecov/codecov-action@v1
+        with:
+          flags: unittests
+          name: ${{ matrix.python-version }}-${{ matrix.env.TOXENV }}
+          token: ${{ secrets.GIT_ACTIONS }}
 
-#  read-the-docs:
-#    runs-on: ubuntu-latest
-#    needs: [test]
-#    steps:
-#      - name: Trigger RTDs build
-#      - uses: dfm/rtds-action@v1
-#      with:
-#        webhook_url: ${{ secrets.RTDS_WEBHOOK_URL }}  # nei secrets di github
-#        webhook_token: ${{ secrets.RTDS_WEBHOOK_TOKEN }}  # nei secrets di github
-#        commit_ref: ${{ github.ref }}
+  read-the-docs:
+    runs-on: ubuntu-latest
+    needs: [test]
+    steps:
+      - name: Trigger RTDs build
+        uses: dfm/rtds-action@v1
+        with:
+          webhook_url: ${{ secrets.RTDS_WEBHOOK_URL }}  # nei secrets di github
+          webhook_token: ${{ secrets.RTDS_WEBHOOK_TOKEN }}  # nei secrets di github
+          commit_ref: ${{ github.ref }}

@@ -35,9 +35,6 @@ Add it to your `INSTALLED_APPS`:
         ...
     )
 
-Add Django-response-mixin-view's URL patterns:
-
-.. code-block:: python
 
 Features
 --------

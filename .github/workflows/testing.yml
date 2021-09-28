@@ -32,10 +32,10 @@ jobs:
       env: ${{ matrix.env }}
       run: tox --py current
 
-#    - name: "Convert coverage"
-#      run: "python -m coverage xml"
-#    - name: "Upload coverage to Codecov"
-#      uses: "codecov/codecov-action@v1"
-#      with:
-#        file: ./coverage.xml
-#        name: ${{ runner.os }}-${{ matrix.python-version }}-${{ matrix.pip-version }}
+    - name: "Convert coverage"
+      run: "python -m coverage xml"
+    - name: "Upload coverage to Codecov"
+      uses: "codecov/codecov-action@v1"
+      with:
+        file: ./coverage.xml
+        name: ${{ runner.os }}-${{ matrix.python-version }}-${{ matrix.pip-version }}

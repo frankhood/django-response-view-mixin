@@ -28,20 +28,26 @@ jobs:
             pip install -r requirements.txt
     - name: Install tox
       run: python -m pip install --upgrade codecov tox tox-py
-    - name: Test with tox ${{ matrix.env.TOXENV }}
+    - name: Test with tox ${{ matrix.env.TOX_ENV }}
       env: ${{ matrix.env }}
       run: tox --py current
 
 
-  upload-to-coverage:
+  coverage:
     needs: [test]
     runs-on: ubuntu-latest
     steps:
-      - name: Upload coverage to Codecov
+      - name: Setup Python
+        uses: actions/setup-python@main
+        with:
+          python-version: 3.8
+      - name: Generate report of Coverage
+        run: |
+          pip install coverage
+          coverage run -m unittest
         uses: codecov/codecov-action@v1
         with:
-          flags: unittests
-          name: ${{ matrix.python-version }}-${{ matrix.env.TOXENV }}
+          name: ${{ matrix.python-version }}-${{ matrix.env.TOX_ENV }}
           token: ${{ secrets.GIT_ACTIONS }}
 
   read-the-docs:

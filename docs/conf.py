@@ -254,7 +254,7 @@ texinfo_documents = [
 #texinfo_no_detailmenu = False
 
 # The name of your GitHub repository
-rtds_action_github_repo = "frankhood/django-response-view-mixin"
+# rtds_action_github_repo = "frankhood/django-response-view-mixin"
 
 # The path where the artifact should be extracted
 # Note: this is relative to the conf.py file!
@@ -264,8 +264,8 @@ rtds_action_github_repo = "frankhood/django-response-view-mixin"
 # rtds_action_artifact_prefix = "notebooks-for-"
 
 # A GitHub personal access token is required, more info below
-rtds_action_github_token = os.environ.get("GITHUB_TOKEN", None)
+# rtds_action_github_token = os.environ.get("GITHUB_TOKEN", None)
 
 # Whether or not to raise an error on ReadTheDocs if the
 # artifact containing the notebooks can't be downloaded (optional)
-rtds_action_error_if_missing = False
+# rtds_action_error_if_missing = False

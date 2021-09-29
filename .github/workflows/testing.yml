@@ -37,8 +37,7 @@ jobs:
     needs: [test]
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Python
-        uses: actions/setup-python@main
+      - uses: actions/setup-python@main
         with:
           python-version: 3.8
       - name: Generate report of Coverage

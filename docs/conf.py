@@ -31,7 +31,7 @@ import response_view_mixin
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.viewcode', 'rtds_action']
+extensions = ['sphinx.ext.autodoc', 'sphinx.ext.viewcode']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -46,7 +46,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Django response mixin view'
+project = u'Django response view mixin'
 copyright = u'2021, Frankhood Business Solution'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -173,7 +173,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'django-response-mixin-viewdoc'
+htmlhelp_basename = 'django-response-view-mixindoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -192,8 +192,8 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'django-response-mixin-view.tex', u'Django-response-mixin-view Documentation',
-   u'Your full name here', 'manual'),
+  ('index', 'django-response-view-mixin.tex', u'Django Response View Mixin Documentation',
+   u'Frankhood Business Solution', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -222,8 +222,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'django-response-mixin-view', u'Django-response-mixin-view Documentation',
-     [u'Your full name here'], 1)
+    ('index', 'django-response-view-mixin', u'Django response View Mixin Documentation',
+     [u'Frankhood Business Solution'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -236,8 +236,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'django-response-mixin-view', u'Django-response-mixin-view Documentation',
-   u'Your full name here', 'django-response-mixin-view', 'One line description of project.',
+  ('index', 'django-response-mixin-view', u'Django Response View Mixin Documentation',
+   u'Frankhood Business Solution', 'django-response-view-mixin', 'One line description of project.',
    'Miscellaneous'),
 ]
 
@@ -254,7 +254,7 @@ texinfo_documents = [
 #texinfo_no_detailmenu = False
 
 # The name of your GitHub repository
-rtds_action_github_repo = "https://github.com/frankhood/django-response-view-mixin/tree/github-actions"
+rtds_action_github_repo = "frankhood/django-response-view-mixin"
 
 # The path where the artifact should be extracted
 # Note: this is relative to the conf.py file!

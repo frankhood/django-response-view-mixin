@@ -23,7 +23,7 @@ Quickstart
 
 Install Django-response-view-mixin::
 
-    pip install response-view-mixin
+    pip install django-response-view-mixin
 
 Add it to your `INSTALLED_APPS`:
 

@@ -33,11 +33,19 @@ jobs:
     needs: [test]
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: '0'
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: coverage
+        run: coverage run --source response_view_mixin runtests.py
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v1
+        uses: codecov/codecov-action@v2
         with:
           flags: unittests
-          name: ${{ matrix.python-version }}-${{ matrix.env.TOXENV }}
           token: ${{ secrets.GIT_ACTIONS }}
 
   read-the-docs:

@@ -40,6 +40,9 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.8
+      - name: Install Dependencies
+        run: |
+              python -m pip install coverage
       - name: coverage
         run: coverage run --source response_view_mixin runtests.py
       - name: Upload coverage to Codecov

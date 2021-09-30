@@ -13,9 +13,6 @@ jobs:
       max-parallel: 4
       matrix:
         python-version: [3.6, 3.7, 3.8, 3.9]
-        env:
-          - TOX_ENV: django-22
-          - TOX_ENV: django-32
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python ${{ matrix.python-version }}
@@ -32,17 +29,32 @@ jobs:
       env: ${{ matrix.env }}
       run: tox --py current
 
+  upload-to-coverage:
+    needs: [test]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: '0'
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: Install Dependencies
+        run: |
+              python -m pip install --upgrade pip
+              pip install -r requirements.txt
+              python -m pip install coverage
+      - name: coverage
+        run: |
+              coverage run runtests.py
+              coverage xml
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v2
+        with:
+          flags: unittests
+          token: ${{ secrets.GIT_ACTIONS }}
 
-  coverage:
-      needs: [ test ]
-      runs-on: ubuntu-latest
-      steps:
-        - name: Upload coverage to Codecov
-          uses: codecov/codecov-action@v1
-          with:
-            flags: unittests
-            name: ${{ matrix.python-version }}-${{ matrix.env.TOXENV }}
-            token: ${{ secrets.GIT_ACTIONS }}
 
   read-the-docs:
     runs-on: ubuntu-latest

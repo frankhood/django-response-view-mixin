@@ -31,7 +31,7 @@ import response_view_mixin
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.viewcode']
+extensions = ['sphinx.ext.autodoc', 'sphinx.ext.viewcode', 'rtds_action']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -46,7 +46,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
+
 project = u'Django response view mixin'
+
 copyright = u'2021, Frankhood Business Solution'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -254,6 +256,7 @@ texinfo_documents = [
 #texinfo_no_detailmenu = False
 
 # The name of your GitHub repository
+
 # rtds_action_github_repo = "frankhood/django-response-view-mixin"
 
 # The path where the artifact should be extracted
@@ -264,8 +267,10 @@ texinfo_documents = [
 # rtds_action_artifact_prefix = "notebooks-for-"
 
 # A GitHub personal access token is required, more info below
+
 # rtds_action_github_token = os.environ.get("GITHUB_TOKEN", None)
 
 # Whether or not to raise an error on ReadTheDocs if the
 # artifact containing the notebooks can't be downloaded (optional)
 # rtds_action_error_if_missing = False
+

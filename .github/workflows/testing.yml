@@ -46,7 +46,7 @@ jobs:
               pip install -r requirements.txt
               python -m pip install coverage
       - name: coverage
-        run: coverage run --source response_view_mixin runtests.py
+        run: coverage run -m unittest
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v2
         with:

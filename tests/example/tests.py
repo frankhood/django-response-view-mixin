@@ -10,7 +10,6 @@ Tests for `django-session-mixin-view` models module.
 from pathlib import Path
 from django.test import TestCase, Client, RequestFactory
 from django.core.files.uploadedfile import SimpleUploadedFile
-from tests.example.models import Example
 from tests.example.views import ExamplePDFAPIView, ExampleTXTAPIView, ExampleFileAPIView, ExampleCSVAPIView
 
 
@@ -20,7 +19,6 @@ class TestExamplePDFViewMixin(TestCase):
     # =============================================
 
     def setUp(self):
-        self.item = Example.objects.create()
         self.client = Client()
         self.request = RequestFactory()
 

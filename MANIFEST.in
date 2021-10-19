@@ -3,5 +3,6 @@ include CONTRIBUTING.rst
 include HISTORY.rst
 include LICENSE
 include README.rst
+include requirements_test.txt
 include requirements.txt
-recursive-include django_response_mixin_view *.html *.png *.gif *js *.css *jpg *jpeg *svg *py
+recursive-include response_view_mixin *.html *.png *.gif *js *.css *jpg *jpeg *svg *py

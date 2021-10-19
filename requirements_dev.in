@@ -1,0 +1,8 @@
+invoke
+twine
+wheel
+zest.releaser
+bumpversion
+
+
+Django>2.2

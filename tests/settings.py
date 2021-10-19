@@ -13,7 +13,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "t6!!wp-vpb31sq1vjrb&!9m_0x&sluhny*5_@^)_i4jaoehq2l"
+SECRET_KEY = "dp6024jqt@74mq)qoj*0i_dj@nv(x_u(qz79toytl(x!hhj-!v"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -32,9 +32,8 @@ INSTALLED_APPS = [
 
     'response_view_mixin',
 
-    # 'response_view_mixin.test_utils.test_app'
-
     'tests.example',
+
     # if your app has other dependencies that need to be added to the site
     # they should be added here
 ]
@@ -114,9 +113,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 PROJECT_PATH, _ = os.path.split(os.path.split(os.path.realpath(__file__))[0])
 PROJECT_ROOT = os.path.split(os.path.split(os.path.dirname(__file__))[0])[0]
-
-PRIVATE_ROOT = os.path.join(PROJECT_PATH, 'privatemedia')
-PRIVATE_URL = '/privatemedia/'
 
 STATIC_URL = 'tests/static/'
 STATIC_ROOT = os.path.join(PROJECT_PATH, 'tests/static')

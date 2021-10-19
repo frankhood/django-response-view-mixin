@@ -7,7 +7,7 @@ from invoke import task
 def open_browser(path):
     try:
         from urllib import pathname2url
-    except:
+    except Exception:
         from urllib.request import pathname2url
     webbrowser.open("file://" + pathname2url(os.path.abspath(path)))
 
@@ -37,7 +37,7 @@ def coverage(c):
     """
     check code coverage quickly with the default Python
     """
-    c.run("coverage run --source django-response-mixin-view runtests.py tests")
+    c.run("coverage run --source django-response-view-mixin runtests.py tests")
     c.run("coverage report -m")
     c.run("coverage html")
     c.run("open htmlcov/index.html")
@@ -48,7 +48,7 @@ def docs(c):
     """
     Build the documentation and open it in the browser
     """
-    c.run("rm -f docs/django-response-mixin-view.rst")
+    c.run("rm -f docs/django-response-view-mixin.rst")
     c.run("rm -f docs/modules.rst")
     c.run("sphinx-apidoc -o docs/ response_view_mixin")
 
@@ -86,7 +86,7 @@ def lint(c):
     """
     Check style with flake8
     """
-    c.run("flake8 django-response-mixin-view tests")
+    c.run("flake8 django-response-view-mixin tests")
 
 
 @task(help={'bumpsize': 'Bump either for a "feature" or "breaking" change'})
@@ -100,10 +100,10 @@ def release(c, bumpsize=''):
 
     c.run("bumpversion {bump} --no-input".format(bump=bumpsize))
 
-    import response_view_mixin
+    import django_response_view_mixin
     c.run("python setup.py sdist bdist_wheel")
     c.run("twine upload dist/*")
 
-    c.run('git tag -a {version} -m "New version: {version}"'.format(version=response_view_mixin.__version__))
+    c.run('git tag -a {version} -m "New version: {version}"'.format(version=django_response_view_mixin.__version__))
     c.run("git push --tags")
     c.run("git push origin master")

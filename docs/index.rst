@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Django-response-mixin-view's documentation!
+Welcome to Django Response View Mixin's documentation!
 =================================================================
 
 Contents:

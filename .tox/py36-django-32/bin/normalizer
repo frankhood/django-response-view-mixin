@@ -1,0 +1,8 @@
+#!/Users/floriano/Desktop/packages/django-response-view-mixin/.tox/py36-django-32/bin/python
+# -*- coding: utf-8 -*-
+import re
+import sys
+from charset_normalizer.cli.normalizer import cli_detect
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(cli_detect())

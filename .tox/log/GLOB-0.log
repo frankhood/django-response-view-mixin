@@ -1,0 +1,78 @@
+action: GLOB, msg: packaging
+cwd: /Users/floriano/Workspace/_FhPackages/django-response-mixin-view
+cmd: /Users/floriano/.virtualenvs/django_response_view_mixin/bin/python setup.py sdist --formats=zip --dist-dir .tox/dist
+running sdist
+running egg_info
+writing django_response_view_mixin.egg-info/PKG-INFO
+writing dependency_links to django_response_view_mixin.egg-info/dependency_links.txt
+writing requirements to django_response_view_mixin.egg-info/requires.txt
+writing top-level names to django_response_view_mixin.egg-info/top_level.txt
+reading manifest file 'django_response_view_mixin.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no files found matching '*.html' under directory 'response_view_mixin'
+warning: no files found matching '*.png' under directory 'response_view_mixin'
+warning: no files found matching '*.gif' under directory 'response_view_mixin'
+warning: no files found matching '*js' under directory 'response_view_mixin'
+warning: no files found matching '*.css' under directory 'response_view_mixin'
+warning: no files found matching '*jpg' under directory 'response_view_mixin'
+warning: no files found matching '*jpeg' under directory 'response_view_mixin'
+warning: no files found matching '*svg' under directory 'response_view_mixin'
+adding license file 'LICENSE'
+adding license file 'AUTHORS.rst'
+writing manifest file 'django_response_view_mixin.egg-info/SOURCES.txt'
+running check
+creating django-response-view-mixin-0.1.0
+creating django-response-view-mixin-0.1.0/django_response_view_mixin.egg-info
+creating django-response-view-mixin-0.1.0/response_view_mixin
+creating django-response-view-mixin-0.1.0/response_view_mixin/utils
+copying files to django-response-view-mixin-0.1.0...
+copying AUTHORS.rst -> django-response-view-mixin-0.1.0
+copying CONTRIBUTING.rst -> django-response-view-mixin-0.1.0
+copying HISTORY.rst -> django-response-view-mixin-0.1.0
+copying LICENSE -> django-response-view-mixin-0.1.0
+copying MANIFEST.in -> django-response-view-mixin-0.1.0
+copying README.rst -> django-response-view-mixin-0.1.0
+copying requirements.txt -> django-response-view-mixin-0.1.0
+copying requirements_test.txt -> django-response-view-mixin-0.1.0
+copying setup.cfg -> django-response-view-mixin-0.1.0
+copying setup.py -> django-response-view-mixin-0.1.0
+copying django_response_view_mixin.egg-info/PKG-INFO -> django-response-view-mixin-0.1.0/django_response_view_mixin.egg-info
+copying django_response_view_mixin.egg-info/SOURCES.txt -> django-response-view-mixin-0.1.0/django_response_view_mixin.egg-info
+copying django_response_view_mixin.egg-info/dependency_links.txt -> django-response-view-mixin-0.1.0/django_response_view_mixin.egg-info
+copying django_response_view_mixin.egg-info/not-zip-safe -> django-response-view-mixin-0.1.0/django_response_view_mixin.egg-info
+copying django_response_view_mixin.egg-info/requires.txt -> django-response-view-mixin-0.1.0/django_response_view_mixin.egg-info
+copying django_response_view_mixin.egg-info/top_level.txt -> django-response-view-mixin-0.1.0/django_response_view_mixin.egg-info
+copying response_view_mixin/__init__.py -> django-response-view-mixin-0.1.0/response_view_mixin
+copying response_view_mixin/apps.py -> django-response-view-mixin-0.1.0/response_view_mixin
+copying response_view_mixin/view_mixins.py -> django-response-view-mixin-0.1.0/response_view_mixin
+copying response_view_mixin/utils/__init__.py -> django-response-view-mixin-0.1.0/response_view_mixin/utils
+copying response_view_mixin/utils/image_serve.py -> django-response-view-mixin-0.1.0/response_view_mixin/utils
+Writing django-response-view-mixin-0.1.0/setup.cfg
+creating '.tox/dist/django-response-view-mixin-0.1.0.zip' and adding 'django-response-view-mixin-0.1.0' to it
+adding 'django-response-view-mixin-0.1.0'
+adding 'django-response-view-mixin-0.1.0/django_response_view_mixin.egg-info'
+adding 'django-response-view-mixin-0.1.0/response_view_mixin'
+adding 'django-response-view-mixin-0.1.0/PKG-INFO'
+adding 'django-response-view-mixin-0.1.0/LICENSE'
+adding 'django-response-view-mixin-0.1.0/requirements.txt'
+adding 'django-response-view-mixin-0.1.0/CONTRIBUTING.rst'
+adding 'django-response-view-mixin-0.1.0/MANIFEST.in'
+adding 'django-response-view-mixin-0.1.0/setup.py'
+adding 'django-response-view-mixin-0.1.0/HISTORY.rst'
+adding 'django-response-view-mixin-0.1.0/AUTHORS.rst'
+adding 'django-response-view-mixin-0.1.0/setup.cfg'
+adding 'django-response-view-mixin-0.1.0/requirements_test.txt'
+adding 'django-response-view-mixin-0.1.0/README.rst'
+adding 'django-response-view-mixin-0.1.0/django_response_view_mixin.egg-info/PKG-INFO'
+adding 'django-response-view-mixin-0.1.0/django_response_view_mixin.egg-info/not-zip-safe'
+adding 'django-response-view-mixin-0.1.0/django_response_view_mixin.egg-info/SOURCES.txt'
+adding 'django-response-view-mixin-0.1.0/django_response_view_mixin.egg-info/requires.txt'
+adding 'django-response-view-mixin-0.1.0/django_response_view_mixin.egg-info/top_level.txt'
+adding 'django-response-view-mixin-0.1.0/django_response_view_mixin.egg-info/dependency_links.txt'
+adding 'django-response-view-mixin-0.1.0/response_view_mixin/utils'
+adding 'django-response-view-mixin-0.1.0/response_view_mixin/__init__.py'
+adding 'django-response-view-mixin-0.1.0/response_view_mixin/apps.py'
+adding 'django-response-view-mixin-0.1.0/response_view_mixin/view_mixins.py'
+adding 'django-response-view-mixin-0.1.0/response_view_mixin/utils/__init__.py'
+adding 'django-response-view-mixin-0.1.0/response_view_mixin/utils/image_serve.py'
+removing 'django-response-view-mixin-0.1.0' (and everything under it)

@@ -11,7 +11,8 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
-import sys, os
+import os
+import sys
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -31,7 +32,7 @@ import response_view_mixin
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.viewcode', 'rtds_action']
+extensions = ['sphinx.ext.autodoc', 'sphinx.ext.viewcode']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -46,10 +47,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-
-project = u'Django response view mixin'
-
-copyright = u'2021, Frankhood Business Solution'
+project = u'Django Response View Mixin'
+copyright = u'2021, FrankHood Business Solutions srl'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -195,7 +194,7 @@ latex_elements = {
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
   ('index', 'django-response-view-mixin.tex', u'Django Response View Mixin Documentation',
-   u'Frankhood Business Solution', 'manual'),
+   u'FrankHood Business Solutions srl', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -224,8 +223,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'django-response-view-mixin', u'Django response View Mixin Documentation',
-     [u'Frankhood Business Solution'], 1)
+    ('index', 'django-response-view-mixin', u'Django Response View Mixin Documentation',
+     [u'FrankHood Business Solutions srl'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -238,8 +237,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'django-response-mixin-view', u'Django Response View Mixin Documentation',
-   u'Frankhood Business Solution', 'django-response-view-mixin', 'One line description of project.',
+  ('index', 'django-response-view-mixin', u'Django Response View Mixin Documentation',
+   u'FrankHood Business Solutions srl', 'django-response-view-mixin', 'One line description of project.',
    'Miscellaneous'),
 ]
 
@@ -254,23 +253,3 @@ texinfo_documents = [
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
-
-# The name of your GitHub repository
-
-# rtds_action_github_repo = "frankhood/django-response-view-mixin"
-
-# The path where the artifact should be extracted
-# Note: this is relative to the conf.py file!
-# rtds_action_path = "tutorials"
-
-# The "prefix" used in the `upload-artifact` step of the action
-# rtds_action_artifact_prefix = "notebooks-for-"
-
-# A GitHub personal access token is required, more info below
-
-# rtds_action_github_token = os.environ.get("GITHUB_TOKEN", None)
-
-# Whether or not to raise an error on ReadTheDocs if the
-# artifact containing the notebooks can't be downloaded (optional)
-# rtds_action_error_if_missing = False
-

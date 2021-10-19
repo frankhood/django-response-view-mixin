@@ -2,16 +2,16 @@
 # -*- coding: utf-8 -*-
 
 """
-test_django-response-mixin-view
+test_django-response-view-mixin
 ------------
 
-Tests for `django-response-mixin-view` models module.
+Tests for `django-response-view-mixin` models module.
 """
 
 from django.test import TestCase
 
 
-class TestDjango_response_mixin_view(TestCase):
+class TestResponse_view_mixin(TestCase):
 
     def setUp(self):
         pass

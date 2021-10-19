@@ -5,7 +5,7 @@ Credits
 Development Lead
 ----------------
 
-* Your full name here <you@example.com>
+* FrankHood Business Solutions srl <info@frankhood.it>
 
 Contributors
 ------------

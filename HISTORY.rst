@@ -14,3 +14,7 @@ History
 0.1.2 (2021-10-19)
 ++++++++++++++++++
 * Rework pipy on github action
+
+0.1.3 (2021-10-20)
+++++++++++++++++++
+* Rework pipy on github action

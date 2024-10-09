@@ -1,18 +1,21 @@
-import os
-
 from pathlib import Path
+
 # Create your views here.
 from django.conf import settings
 from django.views import View
 
-from response_view_mixin.view_mixins import TXTResponseMixin, PDFResponseMixin, \
-    CSVResponseMixin, ImageResponseServeMixin, FileResponseServeMixin
+from response_view_mixin.view_mixins import (
+    CSVResponseMixin,
+    FileResponseServeMixin,
+    PDFResponseMixin,
+    TXTResponseMixin,
+)
 
 
 class ExamplePDFAPIView(PDFResponseMixin, View):
 
     def get_file_name(self):
-        return 'file_test.pdf'
+        return "file_test.pdf"
 
     def get(self, request, *args, **kwargs):
         return self.render_to_response(context={})
@@ -42,7 +45,7 @@ class ExampleFileAPIView(FileResponseServeMixin, View):
         return settings.STATIC_ROOT
 
     def get_file_path(self, **kwargs):
-        path = Path('uploads/test_images/git.jpg')
+        path = Path("uploads/test_images/git.jpg")
         return str(path)
 
     def get(self, request, *args, **kwargs):

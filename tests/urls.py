@@ -1,10 +1,7 @@
-# -*- coding: utf-8 -*-
-from __future__ import absolute_import, unicode_literals
-
-from django.conf.urls import include, url
 from django.contrib import admin
+from django.urls import include, path, re_path
 
 urlpatterns = [
-    url(r"^admin/", admin.site.urls),
-    url(r'^tests/', include('tests.example.urls'))
+    re_path(r"^admin/", admin.site.urls),
+    path("tests/", include("tests.example.urls")),
 ]

@@ -1,5 +1,8 @@
 *.py[cod]
 __pycache__
+.mypy_cache
+*pyvenv*
+venv
 
 # C extensions
 *.so
